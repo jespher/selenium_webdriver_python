@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Python WebDriver</title>
+    </head>
+    <body>
+        <div id="text123">
+            <p>Meu texto fica aqui!</p>
+        </div>
+        <form action="https://www.w3schools.com/action_page.php" method="get">
+            First name: <input type="text" name="fname"><br>
+            Last name: <input type="text" name="lname"><br>
+            <input type="submit" value="Submit">
+            <input type="submit" formmethod="post" formaction="/action_page_post.php" value="Submit using POST">
+        </form>
+        <script type="text/javascript">
+            alert(document.querySelector('form input[value="Submit"]').click())
+        </script>
+    </body>
+</html>
